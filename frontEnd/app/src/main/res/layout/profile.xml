@@ -71,10 +71,10 @@
 
     <TextView
         android:id="@+id/profUser"
-        android:background="@drawable/customitem"
-        android:layout_width="140dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="@drawable/customitem"
         android:text="username"
         android:textAlignment="center"
         android:textColor="#9900F0"
@@ -88,7 +88,7 @@
 
     <TextView
         android:id="@+id/profEmail"
-        android:layout_width="140dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:background="@drawable/customitem"
         android:text="email"
@@ -103,7 +103,7 @@
 
     <TextView
         android:id="@+id/stid"
-        android:layout_width="140dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="244dp"
         android:background="@drawable/customitem"
@@ -123,6 +123,26 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="352dp"
         app:layout_constraintStart_toEndOf="@+id/profUser"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="404dp"
+        app:layout_constraintStart_toEndOf="@+id/profEmail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/edit2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="452dp"
+        app:layout_constraintStart_toEndOf="@+id/stid"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/edit" />
 </androidx.constraintlayout.widget.ConstraintLayout>
