@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Egenda">
         <activity
+            android:name=".profileJava"
+            android:exported="false" />
+        <activity
             android:name=".signupJava"
             android:exported="false" />
         <activity
