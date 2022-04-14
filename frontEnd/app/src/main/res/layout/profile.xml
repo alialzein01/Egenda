@@ -147,4 +147,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/edit" />
 
+    <Button
+        android:id="@+id/nextpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D89900F0"
+        android:text="courses page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
+
+    <Button
+        android:id="@+id/prevpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D89900F0"
+        android:text="Check Schedule"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
