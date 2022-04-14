@@ -70,6 +70,22 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
+        android:id="@+id/profEmail"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customitem"
+        android:text="email"
+        android:textAlignment="center"
+        android:textColor="#9900F0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/stid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profUser"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <TextView
         android:id="@+id/profUser"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
@@ -84,28 +100,13 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameTxt"
-        app:layout_constraintVertical_bias="0.055" />
-
-    <TextView
-        android:id="@+id/profEmail"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/customitem"
-        android:text="email"
-        android:textAlignment="center"
-        android:textColor="#9900F0"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/stid"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profUser" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/stid"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="244dp"
+        android:layout_marginBottom="276dp"
         android:background="@drawable/customitem"
         android:text="id"
         android:textAlignment="center"
@@ -117,21 +118,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/edit1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="352dp"
-        app:layout_constraintStart_toEndOf="@+id/profUser"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/edit" />
-
-    <ImageView
         android:id="@+id/edit"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="404dp"
+        android:layout_marginTop="372dp"
         app:layout_constraintStart_toEndOf="@+id/profEmail"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/edit" />
@@ -141,8 +132,19 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="452dp"
+        android:layout_marginTop="420dp"
         app:layout_constraintStart_toEndOf="@+id/stid"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/edit1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="320dp"
+        app:layout_constraintStart_toEndOf="@+id/profUser"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/edit" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
