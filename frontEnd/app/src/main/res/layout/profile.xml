@@ -148,19 +148,6 @@
         app:srcCompat="@drawable/edit" />
 
     <Button
-        android:id="@+id/nextpage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#D89900F0"
-        android:text="courses page"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736" />
-
-    <Button
         android:id="@+id/prevpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -171,17 +158,19 @@
         app:layout_constraintHorizontal_bias="0.934"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736" />
+        app:layout_constraintVertical_bias="0.768" />
 
     <Button
-        android:id="@+id/addCourse"
+        android:id="@+id/nextpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Course"
+        android:background="#D89900F0"
+        android:text="courses page"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.83" />
+        app:layout_constraintVertical_bias="0.768" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
