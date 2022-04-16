@@ -20,11 +20,11 @@
         app:srcCompat="@drawable/logoicon" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="250dp"
+        android:id="@+id/coursesTitle"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:background="@drawable/customtitle"
-        android:text="Term: Spring 2022"
+        android:text="Current Courses"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="28sp"
@@ -39,11 +39,12 @@
         android:id="@+id/coursedGrid"
         android:layout_width="fill_parent"
         android:layout_height="510dp"
-        app:rowCount="4"
+        app:columnCount="1"
+        app:rowCount="5"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/coursesTitle"
         app:layout_constraintVertical_bias="0.491">
 
     </androidx.gridlayout.widget.GridLayout>
