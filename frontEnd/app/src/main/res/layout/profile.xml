@@ -73,17 +73,18 @@
         android:id="@+id/profEmail"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:background="@drawable/customitem"
         android:text="email"
         android:textAlignment="center"
         android:textColor="#9900F0"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/stid"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profUser"
-        app:layout_constraintVertical_bias="0.521" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/profUser"
@@ -102,21 +103,6 @@
         app:layout_constraintTop_toBottomOf="@+id/nameTxt"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/stid"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="276dp"
-        android:background="@drawable/customitem"
-        android:text="id"
-        android:textAlignment="center"
-        android:textColor="#9900F0"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
         android:id="@+id/edit"
         android:layout_width="40dp"
@@ -124,16 +110,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="372dp"
         app:layout_constraintStart_toEndOf="@+id/profEmail"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/edit" />
-
-    <ImageView
-        android:id="@+id/edit2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="420dp"
-        app:layout_constraintStart_toEndOf="@+id/stid"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/edit" />
 
@@ -148,6 +124,18 @@
         app:srcCompat="@drawable/edit" />
 
     <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE changes"
+        app:layout_constraintBottom_toTopOf="@+id/nextpage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.978" />
+
+    <Button
         android:id="@+id/nextpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -155,21 +143,8 @@
         android:text="courses page"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
-
-    <Button
-        android:id="@+id/save"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SAVE changes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.715" />
+        app:layout_constraintVertical_bias="0.767" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
