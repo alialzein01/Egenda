@@ -33,10 +33,10 @@
 
     <TextView
         android:id="@+id/coursesTitle"
-        android:layout_width="255dp"
+        android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:background="@drawable/customtitle"
-        android:text="Course Description"
+        android:text="Course Name"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="28sp"
@@ -202,6 +202,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.67" />
+        app:layout_constraintVertical_bias="0.69" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
