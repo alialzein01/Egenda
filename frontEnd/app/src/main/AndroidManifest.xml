@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Egenda">
         <activity
+            android:name=".AddcourseJava"
+            android:exported="false" />
+        <activity
             android:name=".HwtrackJava"
             android:exported="false" />
         <activity
