@@ -1,8 +1,8 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    include('DatabaseConfig.php');
-    $con = mysqli_connect($HostName, $HostUser, $HostPass, $DatabaseName);
+    include ('DatabaseConfig.php');
+    $con = mysqli_connect($HostName, $HostUser, $HostPass, $DatabaseName); 
     $S_username = $_POST['Username'];
     $S_password = $_POST['Password'];
 
