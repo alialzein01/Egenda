@@ -25,7 +25,7 @@ import java.util.ArrayList;
 
 public class logInJava extends AppCompatActivity {
     EditText usern, pass;
-    String post_url = "http://10.0.0.2/login.php";
+    String post_url = "http://10.0.2.2/login.php";
     loginApi logapi;
 
     @Override
@@ -41,6 +41,11 @@ public class logInJava extends AppCompatActivity {
         logapi.execute();
     }
 
+    public void signup(View view ){
+        Intent i = new Intent(logInJava.this,signupJava.class);
+        startActivity(i);
+    }
+
     class loginApi extends AsyncTask<String, Void, String> {
 
         @Override
@@ -50,12 +55,12 @@ public class logInJava extends AppCompatActivity {
             HttpPost http_post = new HttpPost(post_url);
 
 
-            BasicNameValuePair usernameParam = new BasicNameValuePair("Username", usern.getText().toString());
-            BasicNameValuePair passwordParam = new BasicNameValuePair("Password", pass.getText().toString());
+            BasicNameValuePair usern = new BasicNameValuePair("Username", logInJava.this.usern.getText().toString());
+            BasicNameValuePair pass = new BasicNameValuePair("Password", logInJava.this.pass.getText().toString());
 
             ArrayList<NameValuePair> name_value_pair_list = new ArrayList<>();
-            name_value_pair_list.add(usernameParam);
-            name_value_pair_list.add(passwordParam);
+            name_value_pair_list.add(usern);
+            name_value_pair_list.add(pass);
 
             try {
                 // This is used to send the list with the api in an encoded form entity
